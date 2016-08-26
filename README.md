@@ -6,7 +6,10 @@ Default Version: 4.10.
 For other Unreal Engine version, please check out the branches. 
 
 ## Installation
-Just put the GhostMesh folder in the Plugins folder in your project. If there is no such a folder, create one. 
+1. Just put the GhostMesh folder in the Plugins folder in your project. If there is no such a folder, create one(eg. C:/Dev/PluginTestProject/Plugins/).
+2. Right click .uproject file, generate visual studio file. 
+3. Open visual studio, recompile the project. 
+
 
 ## How to use this? 
 Please check out the [tutorial](https://www.youtube.com/watch?v=IceIFB7HaRA). 
