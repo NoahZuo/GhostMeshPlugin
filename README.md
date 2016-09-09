@@ -1,8 +1,6 @@
 # GhostMeshPlugin
 This is a UE4 plugin that can create ghost mesh in Unreal Engine 4. 
 
-Default Version: 4.10. 
-
 For other Unreal Engine version, please check out the branches. 
 
 ## Installation
