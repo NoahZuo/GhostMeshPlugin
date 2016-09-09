@@ -26,9 +26,9 @@
 
 
 
-void UCustomPoseableMeshComponent::MakePoseBySkeletalMesh(USkeletalMeshComponent* SkeletalMesh)
+void UCustomPoseableMeshComponent::MakePoseBySkeletalMesh(USkeletalMeshComponent* SkeletalMeshComp)
 {
-	auto skelton = SkeletalMesh->SkeletalMesh;
+	auto skelton = SkeletalMeshComp->SkeletalMesh;
 	if (!IsValid(skelton))
 	{
 		return ;
@@ -38,7 +38,7 @@ void UCustomPoseableMeshComponent::MakePoseBySkeletalMesh(USkeletalMeshComponent
 
 	for(int i = 0; i < nameArr.Num(); i++)
 	{
-		auto socketTransform = SkeletalMesh->GetSocketTransform(nameArr[i],RTS_Component);
+		auto socketTransform = SkeletalMeshComp->GetSocketTransform(nameArr[i],RTS_Component);
 		SetBoneTransformByName(nameArr[i], socketTransform, EBoneSpaces::ComponentSpace);
 	}
 }
